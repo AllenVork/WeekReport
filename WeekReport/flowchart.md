@@ -3,6 +3,7 @@
 标签（空格分隔）： flowchart
 
 ---
+
 ```flow
 st=>start: Start|past:>http://www.google.com[blank]
 e=>end: End:>http://www.google.com
