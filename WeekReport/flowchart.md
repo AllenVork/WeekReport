@@ -29,7 +29,8 @@ graph LR
     
  %% Subgraph example    
  
- graph TB    
+ graph TB 
+ 
          subgraph one
          a1-->a2
          end
