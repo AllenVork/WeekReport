@@ -22,5 +22,8 @@ c2(yes)->io->e
 c2(no)->op2->e
 ```
 
-graph LR
+graph LR    
+
     A-->B
+    
+    
