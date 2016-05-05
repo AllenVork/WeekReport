@@ -22,6 +22,7 @@ c2(yes)->io->e
 c2(no)->op2->e
 ```
 
+<<<<<<< HEAD
 graph LR    
 
     A-->B
@@ -43,3 +44,46 @@ graph LR
          c1-->a2
          
          
+=======
+
+<table>
+<tr><th>Code</th><th>Rendered diagram</th></tr>
+<tr><td>
+<pre>
+<code>
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+<code>
+</pre>
+</td>
+<td>
+<img src='http://www.sveido.com/mermaid/img/ex1.png' alt='Example 1'>
+</td>
+</tr>
+<tr>
+<td>
+<pre>
+<code>
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/>prevail...
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+</code>
+</pre>
+</td>
+<td>
+<img src='http://www.sveido.com/mermaid/img/seq1.png' alt='Example 2'>
+</td>
+</tr>
+</table>
+>>>>>>> 测试table语法
