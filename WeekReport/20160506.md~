@@ -1,0 +1,70 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+Zhang Ruofan's Daily Report
+===================
+
+from 2016.04.11 to 2016.04.25
+---------------------------------
+
+## <i class="icon-pencil"></i>Functions
+
+> - 新增第三方选择控件
+
+> - 将设置以及首次登陆的头像选择改为自定义选择控件,过滤掉头像选择的gif图片
+
+> - 修改加载优先级,优化第三方图片控件的加载速度
+
+> - 添加图片单选功能
+
+> - 添加话题分享功能
+
+> - 添加反射以避免多渠道打包导致的classNotFoundException
+
+> - 添加321版本,新增登陆渠道号
+
+> - 新增微博回调,将第三方的回调全部同意为广播的形式
+
+> - 在mTest环境下添加LeakCanary,减小release环境下包的体积,通过反射避免其余环境出现ClassNotFoundException
+
+> - 调整Snackbar的模式,防止单例引起的内存泄露
+
+> - 解决qq分享sdk的bug并将该方案提交给腾讯开发工程师
+
+
+> **Bug Fixes:**
+
+> - 修复由于网络问题导致加载慢而造成的Kotlin空指针问题
+> - 修复UninitializedPropertyAccessException问题
+> - 修复所有测试提的bug...
+
+
+## <i class="icon-pencil"></i>Milestones And Roadblocks
+
+> - 深入了解了列表的更新规则,更加清晰的优化列表的刷新逻辑,减少item的重新创建造成的性能问题
+
+> - 了解列表的分级刷新,避免adapterPosition的未及时更新而造成的布局位置的计算问题
+
+> - 了解onSaveInstanceState的调用时机,避免对于Fragment的状态的改变而造成问题
+
+> - 了解冷启动与热启动的概念,以及应用启动的优化
+
+> - 学习数据流之避免monad
+
+> - 学习service源码
+
+## <i class="icon-pencil"></i>Plans For Next Week
+
+> **Objects:**
+
+> - 添加内存泄露的检测,并修复
+
+> - 解决所有bug
+
+> - 了解数据流的副作用,避免BlockObservable造成的死锁
+
+> - 学习事件流的创建,将事件流转换为数据流,事件流的聚合以及过滤数据
+
+> - 继续学习service的源码,从源码角度分析service与intentService的区别及生命周期
+
+
+
